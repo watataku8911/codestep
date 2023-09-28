@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f9ff;
+  color: #333;
+}
+
+a {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 10px;
+  }
+}
+
+.logo {
+  width: 160px;
+  line-height: 1px;
+  margin-bottom: 8px;
+}
+
+.hero {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 0 10px;
+  }
+}
+
+.index {
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+}
+
+.index-lists {
+  margin-left: 20px;
+}
+
+.index-lists .index-list {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  padding: 40px 0 20px 0;
+}
+
+.content {
+  display: flex;
+  gap: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+.detail-image {
+  width: 270px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .detail-image {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
+
+.text .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ddd;
+}
+
+.text-detail {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ddd;
+}
+
+.text-detail dt {
+  width: 25%;
+}
+
+.text-detail dd {
+  width: 75%;
+}
+
+.text p {
+  margin: 20px 0 20px 0;
+}
+
+.footer {
+  margin-top: 60px;
+}

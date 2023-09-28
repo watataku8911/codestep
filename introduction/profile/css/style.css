@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto 16px auto;
+  text-align: center;
+}
+
+/* ------------------------------ heaader ------------------------------ */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+
+.header .navigation ul {
+  display: flex;
+  gap: 16px;
+}
+
+/* --------------------- hero -------------------------------------- */
+
+.hero-image {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+/* ----------------------------- about・bicicle ------------------------ */
+
+.about {
+  margin: 80px auto 0 auto;
+}
+
+.about .about-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .about .about-image {
+    margin: 0 auto;
+  }
+}
+
+.about .content {
+  text-align: left;
+}
+
+.about .content .name {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.bicicle {
+  margin-top: 80px;
+}
+
+.bicicle .card {
+  width: 33%;
+}
+
+@media screen and (max-width: 600px) {
+  .bicicle .card {
+    width: 100%;
+  }
+}
+
+.bicicle .card .card__title {
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 60px;
+}
+
+.horizontal-body {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .horizontal-body {
+    flex-direction: column;
+  }
+}
+.footer {
+  margin-top: 160px;
+  color: #555;
+}

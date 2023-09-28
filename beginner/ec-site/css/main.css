@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto 24px auto;
+}
+
+.contents {
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 0 64px;
+}
+
+.flex {
+  display: flex;
+}
+@media screen and (max-width: 896px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.header {
+  border-bottom: solid #777 1px;
+  margin-bottom: 64px;
+}
+
+.logo {
+  width: 109px;
+  margin: 32px auto;
+}
+
+.around {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 896px) {
+  .around {
+    display: flex;
+    gap: 0 24px;
+    justify-content: start-end;
+    overflow: auto;
+  }
+}
+
+.navigation {
+  display: flex;
+  gap: 0 24px;
+  padding: 0 0 32px 0;
+}
+@media screen and (max-width: 896px) {
+  .navigation {
+    gap: 0 16px;
+    padding: 0 0 24px 0;
+  }
+}
+.item-image {
+  max-width: 400px;
+}
+
+.item-info {
+  max-width: 340px;
+}
+@media screen and (max-width: 896px) {
+  .item-info {
+    margin: 8px auto 0 auto;
+  }
+}
+
+.site-title {
+  padding: 16px 0;
+  border-top: solid #777 1px;
+  border-bottom: solid #777 1px;
+  margin-bottom: 16px;
+}
+
+.text,
+.price {
+  margin-bottom: 32px;
+}
+
+.order-table {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.order-table .color,
+.order-table .size {
+  width: 20%;
+}
+
+.order-table .quantity {
+  width: 60%;
+}
+
+.order-table select {
+  width: 100%;
+  border: solid 1px #c3c3c3;
+  padding: 0 10px;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+}
+
+.order-table td {
+  border-top: solid #777 1px;
+}
+
+.order-table th,
+.order-table td {
+  border-right: solid #777 1px;
+  font-weight: normal;
+  padding: 10px;
+  text-align: center;
+}
+
+.order-table th:last-child,
+.order-table td:last-child {
+  border-right: none;
+}
+
+.btn {
+  width: 100%;
+  background-color: #4b4b4b;
+  color: #fff;
+  display: block;
+  line-height: 1;
+  padding: 18px 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.size-table {
+  width: 100%;
+  text-align: center;
+  border: solid 1px #777;
+}
+
+.size-table td,
+.size-table th {
+  border-left: solid 1px #777;
+  border-top: solid 1px #777;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.size-table th {
+  background-color: #ddd;
+}
+
+.footer {
+  margin-top: 96px;
+  text-align: center;
+}

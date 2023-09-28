@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #2b2a27;
+  font-family: "Crimson Text", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-devoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.fv,
+.header {
+  width: 90vw;
+}
+
+.fv {
+  margin: 25px auto;
+}
+@media screen and (max-width: 767px) {
+  .fv {
+    width: 100%;
+    margin: 0;
+  }
+
+  .fv-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+.header {
+  margin: 0 auto 60px auto;
+  display: flex;
+  align-items: center;
+  gap: 0 32px;
+}
+
+.header .navigation {
+  display: flex;
+  gap: 0 16px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto 10px auto;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 3%;
+  }
+}
+
+.concept,
+.work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .concept,
+  .work {
+    flex-direction: column;
+    gap: 32px 0;
+  }
+}
+
+.img {
+  width: 50%;
+}
+
+.text {
+  width: 40%;
+}
+@media screen and (max-width: 767px) {
+  .img {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .work .img {
+    order: 1;
+  }
+
+  .work .text {
+    order: 2;
+  }
+}
+
+.logo {
+  width: 110px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

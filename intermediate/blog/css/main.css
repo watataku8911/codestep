@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Noto Sans", "Noto Serif JP", sans-serif;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+}
+
+.readmore {
+  text-align: center;
+}
+
+.readmore a {
+  font-size: 0.85rem;
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+
+.readmore a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+.header {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+}
+
+.header .logo {
+  padding: 20px 16px;
+}
+
+.navigation-area {
+  background-color: #333;
+}
+@media screen and (max-width: 767px) {
+  .navigation-area {
+    overflow-x: scroll;
+  }
+}
+
+.navigation-area .navigation {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .navigation-area .navigation {
+    width: 130%;
+    justify-content: space-around;
+  }
+}
+
+.navigation-area .navigation li {
+  padding: 8px 0;
+}
+
+.navigation-area .navigation li a {
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.pickup {
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .pickup {
+    gap: 16px 0;
+  }
+}
+
+.pickup__card {
+  width: 32%;
+}
+@media screen and (max-width: 767px) {
+  .pickup__card {
+    width: 100%;
+  }
+}
+
+.pickup__title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.contents {
+  justify-content: space-between;
+}
+
+.contents .left {
+  width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .contents .left {
+    width: 100%;
+  }
+}
+
+.contents .left .main-card {
+  margin-bottom: 60px;
+}
+
+.contents .left .main-card a {
+  color: #333;
+}
+
+.contents .left .main-card .main-card__title {
+  margin-bottom: 8px;
+}
+
+.contents .left .main-card .chip {
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.contents .left .main-card p {
+  margin: 8px 0;
+  padding: 0 32px;
+}
+
+.contents .right {
+  width: 32%;
+}
+@media screen and (max-width: 767px) {
+  .contents .right {
+    width: 100%;
+  }
+}
+
+.profile,
+.ranking,
+.archive {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.profile img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.profile .name {
+  padding: 32px 0;
+}
+
+.profile p {
+  text-align: left;
+}
+
+.ranking__card p {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.ranking__card a {
+  display: block;
+  color: #333;
+}
+
+.ranking__title,
+.archive__title {
+  padding-bottom: 32px;
+}
+
+.archive .archive__list {
+  text-align: left;
+}
+
+.archive li {
+  font0size: 0.8rem;
+  padding: 16px;
+  border-top: solid 1px #333;
+}
+
+.archive li:last-child {
+  border-bottom: solid 1px #333;
+}
+
+.archive a {
+  color: #333;
+}
+
+.footer {
+  margin-top: 80px;
+  background-color: #f7f7f7;
+  padding-top: 64px;
+}
+
+.footer a {
+  color: #333;
+}
+
+.inner {
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .inner {
+    gap: 64px 0;
+  }
+}
+
+.about,
+.navi,
+.twitter {
+  width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .about,
+  .navi,
+  .twitter {
+    width: 100%;
+  }
+}
+
+.about__title,
+.navi__title,
+.twitter__title {
+  font-size: 1.2rem;
+  padding-bottom: 24px;
+}
+
+.about__list {
+  margin-top: 12px;
+}
+
+.about__list .arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 12px;
+  color: #333;
+}
+
+.about__list .arrow::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+
+.navi li {
+  padding: 16px;
+  border-top: solid 1px #333;
+}
+
+.navi li:last-child {
+  border-bottom: solid 1px #333;
+}
+
+.copyright {
+  padding: 24px 0;
+  text-align: center;
+}

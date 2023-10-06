@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #121212;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+@media screen and (max-width: 960px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.wrapper {
+  max-width: 900px;
+  padding: 80px 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .wrapper {
+    padding: 60px 20px;
+  }
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 960px) {
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+}
+
+.section-title::before,
+.section-title::after {
+  display: block;
+  content: "";
+  border-top: 1px solid #000;
+  width: 28%;
+}
+@media screen and (max-width: 960px) {
+  .section-title::before,
+  .section-title::after {
+    width: 10%;
+  }
+}
+
+.section-title.white::before,
+.section-title.white::after {
+  display: block;
+  content: "";
+  border-top: 1px solid #fff;
+  width: 28%;
+}
+@media screen and (max-width: 960px) {
+  .section-title.white::before,
+  .section-title.white::after {
+    width: 10%;
+  }
+}
+
+.header {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #fff;
+  padding: 40px 50px 30px 45px;
+}
+@media screen and (max-width: 960px) {
+  .header {
+    width: 100%;
+    height: 72px;
+    padding: 0;
+    z-index: 2;
+  }
+}
+
+.header .logo {
+  width: 200px;
+  line-height: 1px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 960px) {
+  .header .logo {
+    width: 180px;
+    margin-bottom: 0;
+    position: relative;
+    left: 18px;
+    top: 10px;
+  }
+}
+
+.header .navigation-menu {
+  margin-bottom: 64px;
+}
+
+.header li {
+  font-size: 0.875rem;
+  padding: 8px 0;
+}
+
+.container {
+  margin-left: 300px;
+}
+@media screen and (max-width: 960px) {
+  .container {
+    margin-left: 0;
+  }
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (max-width: 960px) {
+  .video {
+    height: 80vh;
+  }
+}
+
+.video .bg-video {
+  position: fixed;
+  top: -220px;
+  z-index: -10;
+}
+@media screen and (max-width: 960px) {
+  .video .bg-video {
+    height: 520px;
+    top: 72px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.project {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+.project-list {
+  gap: 24px 0;
+}
+
+.project-list li {
+  width: 48.5%;
+  position: relative;
+  border: solid 1px #fff;
+}
+@media screen and (max-width: 960px) {
+  .project-list li {
+    width: 100%;
+  }
+}
+
+.project-list li .project-name {
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 2px;
+  left: 8px;
+}
+
+.about {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.about ul {
+  display: flex;
+}
+
+.about li {
+  text-align: center;
+  width: 30%;
+}
+
+.about li .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about li .circle::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.about li .circle:hover::before {
+  left: 0;
+}
+
+.about li .title {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.flow p {
+  margin-bottom: 64px;
+}
+
+.flow .figure {
+  width: 30%;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  .flow .figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.flow .figure::before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 600px;
+  background-color: #ffdd00;
+  position: absolute;
+  top: 0;
+  left: 75px;
+}
+@media screen and (max-width: 960px) {
+  .flow .figure::before {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.flow .figure li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+  background-color: #414141;
+  font-size: 0.875rem;
+  margin-bottom: 60px;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  .flow .figure li {
+    width: calc(100vw - 80px);
+  }
+}
+
+.flow .figure li::before {
+  content: "";
+  border-top: 30px solid #414141;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .flow .figure li::before {
+    border-left: calc(50vw - 40px) solid transparent;
+    border-right: calc(50vw - 40px) solid transparent;
+  }
+}
+
+.flow .description {
+  width: 65%;
+}
+@media screen and (max-width: 960px) {
+  .flow .description {
+    width: 85%;
+    margin-left: 50px;
+  }
+}
+
+.flow .description dt {
+  border-bottom: solid 1px #121212;
+  font-size: 1.25rem;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.flow .description dt span {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3px;
+  left: -45px;
+}
+
+.flow .description dd {
+  margin-bottom: 43px;
+}
+
+.contact .contact-list {
+  padding: 56px 0;
+}
+@media screen and (max-width: 960px) {
+  .contact .contact-list {
+    gap: 16px 0;
+  }
+}
+
+.contact .contact-list li {
+  width: 30%;
+}
+@media screen and (max-width: 960px) {
+  .contact .contact-list li {
+    width: 100%;
+  }
+}
+
+.contact .contact-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: solid 1px black;
+  transition: 0.1s;
+  position: relative;
+}
+
+.contact .contact-list li a::before {
+  content: "";
+  border-top: 20px solid transparent;
+  border-right: 20px solid #121212;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+
+.contact .contact-list li a:hover {
+  border: solid 4px black;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  padding: 56px 0;
+  gap: 8px 0;
+}
+
+.footer-list li {
+  padding: 0 24px;
+  border-right: solid 1px #fff;
+  font-size: 0.875rem;
+}
+
+.footer-list li:last-child {
+  border-right: none;
+}
+
+.copyright {
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.to-top {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+
+  display: flex;
+  align-items: center;
+  width: 48px;
+  aspect-ratio: 1;
+  border: solid 1px white;
+  border-radius: 50%;
+  position: fixed;
+  right: 24px;
+  bottom: 32px;
+  transition: 0.3s;
+}
+
+.to-top::before {
+  content: "";
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  position: relative;
+  left: 17px;
+  bottom: 1px;
+}
+
+/* ハンバーガーメニューのスタイル */
+@media screen and (max-width: 960px) {
+  .humberger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 22px;
+    right: 18px;
+    transition: 0.5s;
+    z-index: 20;
+  }
+
+  .humberger span {
+    width: 30px;
+    height: 2px;
+    background-color: #121212;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+  }
+
+  .humberger span:nth-child(1) {
+    top: 4px;
+  }
+
+  .humberger span:nth-child(2) {
+    top: 14px;
+  }
+
+  .humberger span:nth-child(3) {
+    top: 24px;
+  }
+
+  .humberger.active span {
+    background-color: #fff;
+  }
+
+  .humberger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+  }
+
+  .humberger.active span:nth-child(2) {
+    transform: translateY(10px) rotate(-315deg);
+    top: 4px;
+  }
+
+  .humberger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+  }
+
+  .navigation {
+    width: 300px;
+    background: #fff;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    opacity: 0;
+    overflow-y: auto;
+    transition: 0.5s;
+    z-index: 20;
+  }
+
+  .navigation.open {
+    opacity: 1;
+    left: 0;
+  }
+
+  .mask {
+    display: none;
+    transition: 0.5s;
+  }
+
+  .mask.open {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+}

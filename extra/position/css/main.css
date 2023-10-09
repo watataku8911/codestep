@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efeded;
+  color: #35383a;
+  font-family: "Noto Serif JP", serif;
+}
+
+a {
+  color: #35383a;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contents {
+  max-width: 1000px;
+  height: 698px;
+  margin: 100px auto;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .contents {
+    height: auto;
+    position: static;
+    margin: 0;
+  }
+}
+
+.contents .text {
+  max-width: 680px;
+  background-color: #fff;
+  padding: 84px 160px 84px 84px;
+  position: absolute;
+  left: 0;
+}
+@media screen and (max-width: 1000px) {
+  .contents .text {
+    max-width: 100%;
+    padding: 60px 20px;
+    position: static;
+  }
+}
+
+.contents .text .site-title {
+  margin-bottom: 24px;
+  border-bottom: solid 1px #35383a;
+  display: inline-block;
+  font-size: 1.875rem;
+  font-weight: normal;
+}
+
+.contents .text .large {
+  font-size: 1.875rem;
+}
+
+.contents .text p {
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.contents .text .btn {
+  display: inline-block;
+  border: solid 1px #35383a;
+  border-radius: 30px;
+  padding: 16px 50px;
+  transition: all 0.3s ease;
+}
+
+.contents .text .btn:hover {
+  background-color: #efeded;
+}
+
+.contents .img {
+  max-width: 400px;
+  position: absolute;
+  top: 140px;
+  right: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .contents .img {
+    max-width: 100%;
+    position: static;
+  }
+}

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbef;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 100px auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.accordion {
+  border-top: solid 1px #000;
+}
+
+.accordion:last-child {
+  border-bottom: solid 1px #000;
+}
+
+.accordion[open] {
+  background-color: #ffda5f;
+}
+
+.accordion .label {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 40px 30px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.accordion .label:hover {
+  background-color: #ffda5f;
+}
+
+.accordion .label::before,
+.accordion .label::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.accordion .label::after {
+  transform: translateY(-50%) rotate(90deg);
+  transition: 0.5s;
+}
+
+.accordion[open] .label::after {
+  transform: rotate(180deg);
+}
+
+.accordion .detail {
+  border-top: solid 1px #ccc;
+  padding: 32px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fffbef;
+}
+
+.accordion .detail dt {
+  padding-bottom: 32px;
+  font-weight: bold;
+  width: 20%;
+}
+
+.accordion .detail dd {
+  padding-bottom: 32px;
+  width: 80%;
+}

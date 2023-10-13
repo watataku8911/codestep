@@ -42,6 +42,11 @@ body {
   position: relative;
   transition: 0.5s;
 }
+@media screen and (max-width: 600px) {
+  .accordion .label {
+    padding: 40px 0;
+  }
+}
 
 .accordion .label:hover {
   background-color: #ffda5f;
@@ -75,14 +80,33 @@ body {
   flex-wrap: wrap;
   background-color: #fffbef;
 }
+@media screen and (max-width: 600px) {
+  .accordion .detail {
+    padding: 32px 0;
+  }
+}
 
 .accordion .detail dt {
   padding-bottom: 32px;
   font-weight: bold;
   width: 20%;
 }
+@media screen and (max-width: 600px) {
+  .accordion .detail dt {
+    padding-bottom: 16px;
+    font-weight: bold;
+    width: 100%;
+  }
+}
 
 .accordion .detail dd {
   padding-bottom: 32px;
   width: 80%;
+}
+@media screen and (max-width: 600px) {
+  .accordion .detail dd {
+    padding-bottom: 16px;
+    padding-left: 16px;
+    width: 100%;
+  }
 }

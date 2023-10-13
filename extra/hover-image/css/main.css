@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+.contents {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 20px auto;
+}
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 0 10px;
+    margin: 10px auto;
+  }
+}
+
+.fv {
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  .fv {
+    padding: 5px;
+  }
+}
+
+.list {
+  display: flex;
+}
+
+.list li {
+  width: 20%;
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  .list li {
+    padding: 5px;
+  }
+}

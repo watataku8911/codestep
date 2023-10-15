@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+}
+
+/* ナビゲーション */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+  left: 0;
+}
+
+.swiper-button-prev::after {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  line-height: 1;
+  width: 14px;
+  height: 14px;
+  border: 4px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateX(23%) rotate(-135deg);
+}
+
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+  right: 0;
+}
+
+.swiper-button-next::after {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  line-height: 1;
+  width: 14px;
+  height: 14px;
+  border: 4px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateX(-20%) rotate(-315deg);
+}
+
+/* ページネーション */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #111;
+  height: 6px;
+  width: 6px;
+  margin: 0 16px !important;
+}
+@media screen and (max-width: 900px) {
+  .swiper-pagination-bullet {
+    margin: 0 12px !important;
+  }
+}

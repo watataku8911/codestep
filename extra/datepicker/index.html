@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="site-title">セミナー お申込みフォーム</h1>
+      <form action="#">
+        <dl class="flex form">
+          <dt>
+            <label for="name">名前</label>
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input type="text" class="name" name="your-name" />
+            <p class="name-error"></p>
+          </dd>
+          <dt>
+            <label for="tel1">電話番号</label>
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input type="text" class="tel1" name="your-tel1" /> -
+            <input type="text" class="tel2" name="your-tel2" /> -
+            <input type="text" class="tel3" name="your-tel3" />
+            <p class="tel-error"></p>
+          </dd>
+          <dt>
+            <label for="reservation">予約日</label>
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input type="text" class="reservation" name="your-reservation" />
+            13時 ～ 14時
+            <p class="reservation-error"></p>
+          </dd>
+          <dt>
+            受講形式
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input
+              type="radio"
+              class="online"
+              name="your-lesson"
+              value="online"
+              checked
+            />
+            <label for="online">オンラインで受講</label><br />
+            <input
+              type="radio"
+              class="venue"
+              name="your-lesson"
+              value="venue"
+            />
+            <label for="venue">会場で受講</label>
+            <p class="lesson-error"></p>
+          </dd>
+        </dl>
+        <div class="note-online">
+          <p>
+            当日はオンライン会議システムを使用いたします。<br />
+            ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。<br />
+            参加方法については、前日までに別途ご案内を差し上げます。
+          </p>
+        </div>
+
+        <div class="note-venue">
+          <p>
+            【会場情報】<br />
+            会場：代々木GIプラザ3F Room1<br />
+            住所：〒151-0053　東京都渋谷区代々木1-1-1<br />
+            電話番号：00-0000-0000
+          </p>
+        </div>
+
+        <div class="button-area">
+          <button class="submit-button" type="button" value="">
+            上記の内容で申し込む
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+
+  <script src="js/script.js"></script>
+</html>

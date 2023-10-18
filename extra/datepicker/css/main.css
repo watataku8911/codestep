@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.name-error,
+.tel-error,
+.reservation-error {
+  color: #de3f2e;
+  margin-top: 2px;
+}
+
+.flex {
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 10px;
+}
+
+.site-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.form dt {
+  width: 30%;
+  background-color: #3d546a;
+  color: #fff;
+  padding: 30px 15px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .form dt {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.form dt span {
+  background-color: #fff;
+  color: #e85c4e;
+  font-size: 0.75rem;
+  padding: 0 8px;
+}
+@media screen and (max-width: 600px) {
+  .form dt span {
+    margin-left: 10px;
+  }
+}
+
+.form dd {
+  width: 70%;
+  background-color: #fff;
+  padding: 22px 15px 20px 15px;
+  margin-bottom: 2px;
+}
+@media screen and (max-width: 600px) {
+  .form dd {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+.form input {
+  background-color: #f2f2f2;
+  padding: 8px 10px;
+  border: none;
+}
+
+.form .your-name {
+  width: 100%;
+}
+
+.form .tel1,
+.form .tel2,
+.form .tel3 {
+  max-width: 80px;
+}
+
+.note-online,
+.note-venue {
+  margin-top: 16px;
+  padding: 0 30px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 600px) {
+  .note-online,
+  .note-venue {
+    padding: 0 10px;
+  }
+}
+
+.note-venue {
+  display: none;
+}
+
+.button-area {
+  text-align: center;
+}
+
+.submit-button {
+  background-color: #e85c4e;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+#submit-button:hover {
+  opacity: 0.7;
+}

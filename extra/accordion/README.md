@@ -17,6 +17,12 @@ HTML で上記のようなコードを書くと簡単に開閉式のアコーデ
 簡単です。
 
 `list-style: none;`するだけ。
+```
+/* 一部ブラウザで消えなかった場合は以下も追記 */
+summary::-webkit-details-marker {
+  display:none;
+}
+```
 
 ## アコーディオンの開閉の状態を調べる
 
